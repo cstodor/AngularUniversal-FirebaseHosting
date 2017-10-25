@@ -1,0 +1,1 @@
+export const REPOS_LIST = 'https://api.github.com/users/cstodor/repos'
