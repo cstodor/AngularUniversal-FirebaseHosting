@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
 
+## To Run app with AngularUniversal, all you need to do is:
+
+1. Build App: `ng build --prod --aot`
+2. Build Server: `ng build --prod --aot --app 1`
+3. Copy the `index.hml` from `dist` folder to `functions/dist-server`
+4. Rename the main.<random>.bundle.js file to `main.bundle.js`
+5. Compile TS server file to JS: `tsc -p ./functions/tsconfig.functions.json`
+6. Serve App: `firebase serve --only hosting,functions`
+7. Open Browser, and navigate to `localhost:5000`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
