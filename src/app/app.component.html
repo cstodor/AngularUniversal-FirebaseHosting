@@ -1,7 +1,15 @@
-<h2>My Git Repositories</h2>
+<h2>My Git Repositories | Asynchronous Data from GitHub API</h2>
 
 <ul *ngIf="repos">
   <li *ngFor="let repo of repos | async">
     {{ repo.name }}
+  </li>
+</ul>
+
+<h2>Hardcoded Data</h2>
+
+<ul *ngIf="repos">
+  <li *ngFor="let hrepo of hrepos">
+    {{ hrepo.name }}
   </li>
 </ul>
