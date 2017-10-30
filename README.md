@@ -14,7 +14,7 @@
 3. Copy the `index.hml` from `dist` folder to `functions/dist-server`
 4. Rename the main.<random>.bundle.js file to `main.bundle.js`
 5. Compile TS server file to JS: `tsc -p ./functions/tsconfig.functions.json`
-6. Serve App: `firebase serve --only hosting,functions` (You need to be logged in: `firebase`)
+6. Serve App: `firebase serve --only hosting,functions` (You need to be logged in: `firebase login`)
 7. Open Browser, and navigate to `localhost:5000`
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
